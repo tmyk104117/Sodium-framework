@@ -66,8 +66,6 @@
 		36A8DD2B1D28D9AB00B97D7E /* sodium-lib.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DD2A1D28D9AB00B97D7E /* sodium-lib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A8DD561D28DC1B00B97D7E /* Sodium.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DD551D28DB9400B97D7E /* Sodium.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A8DD571D28DC1C00B97D7E /* Sodium.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DD551D28DB9400B97D7E /* Sodium.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36A8DD581D28DC4000B97D7E /* libsodium-macOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A8DD271D28D89F00B97D7E /* libsodium-macOS.a */; };
-		36A8DD591D28DC4600B97D7E /* libsodium-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A8DD521D28DAD000B97D7E /* libsodium-iOS.a */; };
 		36A8DD5A1D28DC4F00B97D7E /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCB61D28D81900B97D7E /* core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A8DD5B1D28DC4F00B97D7E /* crypto_aead_aes256gcm.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCB71D28D81900B97D7E /* crypto_aead_aes256gcm.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A8DD5C1D28DC4F00B97D7E /* crypto_aead_chacha20poly1305.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCB81D28D81900B97D7E /* crypto_aead_chacha20poly1305.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -129,6 +127,8 @@
 		36A8DD9C1D292B9A00B97D7E /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A8DCAB1D28D70D00B97D7E /* Sodium.framework */; };
 		36A8DDAE1D29409800B97D7E /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A8DD461D28DA5A00B97D7E /* Sodium.framework */; };
 		36A8DDB41D2940A300B97D7E /* SodiumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A8DD991D292B9A00B97D7E /* SodiumTests.swift */; };
+		A29D4F2927980E65007B4C2E /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A29D4F2827980E65007B4C2E /* libsodium.a */; };
+		A29D4F2A27980E66007B4C2E /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A29D4F2827980E65007B4C2E /* libsodium.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -217,6 +217,7 @@
 		36A8DD9B1D292B9A00B97D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36A8DDA91D29409800B97D7E /* SodiumTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SodiumTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A8DDAD1D29409800B97D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A29D4F2827980E65007B4C2E /* libsodium.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsodium.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,7 +225,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36A8DD581D28DC4000B97D7E /* libsodium-macOS.a in Frameworks */,
+				A29D4F2927980E65007B4C2E /* libsodium.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +233,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36A8DD591D28DC4600B97D7E /* libsodium-iOS.a in Frameworks */,
+				A29D4F2A27980E66007B4C2E /* libsodium.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +355,7 @@
 		36A8DD291D28D8A300B97D7E /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				A29D4F2827980E65007B4C2E /* libsodium.a */,
 				36A8DD521D28DAD000B97D7E /* libsodium-iOS.a */,
 				36A8DD271D28D89F00B97D7E /* libsodium-macOS.a */,
 			);
